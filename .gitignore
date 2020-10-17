@@ -1,0 +1,16 @@
+#IDE
+/.idea
+
+# npm
+node_modules
+package-lock.json
+
+# dist
+/dist
+
+# flow css
+*.css.flow
+*.scss.flow
+
+# other
+.DS_Store
