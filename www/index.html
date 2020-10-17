@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- do not translate in google chrome -->
+    <meta name="google" content="notranslate"/>
+
+    <!-- do not parse list of numbers as phone -->
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Test task</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+</head>
+<body>
+
+<div class="js-app-wrapper app-wrapper">
+    <style>
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes loading-spinner {
+            0% {
+                transform: rotateZ(0);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .spinner-image {
+            width: 80px;
+            height: 80px;
+            animation-direction: normal;
+            animation-duration: 0.75s;
+            animation-fill-mode: none;
+            animation-iteration-count: infinite;
+            animation-name: loading-spinner;
+            animation-play-state: running;
+            animation-timing-function: linear;
+            border-color: #f0f0f0;
+            border-radius: 100%;
+            border-style: solid;
+            border-top-color: #444;
+            border-width: 5px;
+            box-sizing: border-box;
+            display: block;
+        }
+    </style>
+
+    <div class="loader-wrapper">
+        <div class="spinner-image"/>
+    </div>
+</div>
+
+</body>
+</html>
